@@ -1,0 +1,102 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english]{babel} %\usepackage[english,russian]{babel}
+\usepackage{jheppub}
+\usepackage{amsmath,amssymb,amsthm,mathrsfs,amsfonts,xfrac,pifont,mathtools}
+ % For including math equations, theorems, symbols, etc
+\usepackage{icomma}
+\usepackage{mathtools}
+\usepackage{euscript}	 % Шрифт Евклид
+\usepackage{mathrsfs}
+\usepackage[utf8]{inputenc}
+\usepackage{relsize}
+\usepackage{cleveref}
+\usepackage{array,tabularx}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{etoolbox}
+%\usepackage{mathtools}
+\usepackage{emerald,xcolor,tikz}
+\definecolor{lightergray}{rgb}{0.9,0.9,0.9}
+\usepackage{siunitx}
+\usepackage{soul}
+\usetikzlibrary{matrix,calc,positioning,decorations.markings,decorations.pathmorphing,decorations.pathreplacing}%tikzmark,
+\usetikzlibrary{arrows,cd}
+\usepackage{bbding}
+\usetikzlibrary{positioning}
+%\tikzset{every picture/.style={remember picture}}
+\tikzset{>=stealth}
+\usepackage{cancel}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\usepackage{calc}
+\theoremstyle{definition} % Define theorem styles here based on the definition style (used for definitions and examples)
+\newtheorem*{definition}{Definition}
+
+\theoremstyle{plain} % Define theorem styles here based on the plain style (used for theorems, lemmas, propositions)
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{axiom}{Axiom}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{remark} % Define theorem styles here based on the remark style (used for remarks and notes)
+\newtheorem*{notation}{Notation}
+\newtheorem*{solution}{Solution}
+
+\newtheoremstyle{underline}% name
+{}        % Space above, empty = `usual value'
+{}              % Space below
+{}              % Body font
+{}    % Indent amount (empty = no indent, \parindent = para indent)
+{}              % Thm head font
+{.}             % Punctuation after thm head
+{1.5mm}         % Space after thm head: \newline = linebreak
+{{\underline{\textit{\thmname{#1}\thmnumber{ #2}}~\thmnote{(#3)}\unskip}}}  % Thm head spec
+
+\theoremstyle{underline}
+
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+
+\usepackage{hyperref}
+\hypersetup{
+	%draft, % Uncomment to remove all links (useful for printing in black and white)
+	colorlinks=true, linkcolor=black, breaklinks=true,
+	%bookmarks=true,
+	bookmarksnumbered=true,
+	%urlcolor=webbrown, linkcolor=RoyalBlue, citecolor=webgreen, % Link colors
+	pdftitle={Lecture notes on Quantum Mechanics and Related topics}, % PDF title
+	pdfauthor={Sergey Barseghyan}, % PDF Author
+	pdfsubject={}, % PDF Subject
+	pdfkeywords={}, % PDF Keywords
+	pdfencoding=unicode, %
+	pdfstartview={FitH}, %
+	pdfcreator={pdfLaTeX/Overleaf}, % PDF Creator
+}
+
+\input{shortcuts}
+
+
+\title{Вычислительная математика}
+\author{Sergey Barseghyan}
+\affiliation{Moscow Institute of Physics and Technology}
+\emailAdd{barseghyan@phystech.edu}
+
+
+
+
+
+\date{\today}
+
+\begin{document}
+	
+\maketitle
+\[
+\L{u}=f(x,y)
+
+\]
+
+	
+\end{document}
